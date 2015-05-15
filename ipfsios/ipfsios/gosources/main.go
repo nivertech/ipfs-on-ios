@@ -1,5 +1,4 @@
 package main
-
 /*
 // adjust LDFLAGS to produce linkable code - note Go starts first, so
 // be sure to change AppDelegate main() for chaining ..
@@ -14,12 +13,10 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-
-	// ipfs
-	"code.google.com/p/go.net/context"
-	core "github.com/jbenet/go-ipfs/core"
-	corenet "github.com/jbenet/go-ipfs/core/corenet"
-	fsrepo "github.com/jbenet/go-ipfs/repo/fsrepo"
+	//"code.google.com/p/go.net/context"
+	//core "github.com/ipfs/go-ipfs/core"
+	//corenet "github.com/ipfs/go-ipfs/core/corenet"
+	//fsrepo "github.com/ipfs/go-ipfs/repo/fsrepo"
 )
 
 //export AddUsingGo
@@ -38,49 +35,11 @@ func StartGoServer() {
 	http.HandleFunc("/", HandleHttpRequest)
 	http.ListenAndServe(":6060", nil)
 }
-
 /*
-
-func ipfs_client() {
-    peerIdStr := "QmYjCC4zppJgaSPYxZqNV2R4otNjzANjFGK4LJQd3ufEMC"
-
-	target, err := peer.IDB58Decode(peerIdStr)
-	if err != nil {
-		panic(err)
-	}
-
-	// Basic ipfsnode setup
-	r := fsrepo.At("~/.go-ipfs")
-	if err := r.Open(); err != nil {
-		panic(err)
-	}
-
-	nb := core.NewNodeBuilder().Online()
-	nb.SetRepo(r)
-
-	ctx, cancel := context.WithCancel(context.Background())
-	defer cancel()
-
-	nd, err := nb.Build(ctx)
-	if err != nil {
-		panic(err)
-	}
-
-	fmt.Printf("I am peer %s dialing %s\n", nd.Identity, target)
-
-	con, err := corenet.Dial(nd, target, "/app/whyrusleeping")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	io.Copy(os.Stdout, con)
-}
-
 func ipfs_server() {
 	// Basic ipfsnode setup
-	r := fsrepo.At("~/.go-ipfs")
-	if err := r.Open(); err != nil {
+	r, err := fsrepo.Open("~/.ipfs")
+	if err != nil {
 		panic(err)
 	}
 
