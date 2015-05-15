@@ -13,7 +13,6 @@
 		0910F3BC1AE839DB00BAFC5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0910F3BA1AE839DB00BAFC5E /* Main.storyboard */; };
 		0910F3BE1AE839DB00BAFC5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0910F3BD1AE839DB00BAFC5E /* Images.xcassets */; };
 		0910F3C11AE839DB00BAFC5E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0910F3BF1AE839DB00BAFC5E /* LaunchScreen.xib */; };
-		0910F3CD1AE839DB00BAFC5E /* ipfsiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0910F3CC1AE839DB00BAFC5E /* ipfsiosTests.m */; };
 		0910F3D81AE839F300BAFC5E /* build-go.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0910F3D61AE839F300BAFC5E /* build-go.sh */; };
 		0910F3E21AE8474C00BAFC5E /* main.go in Resources */ = {isa = PBXBuildFile; fileRef = 0910F3E11AE8474C00BAFC5E /* main.go */; };
 		09C59EF21AE9005F008B9926 /* go-output.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C59EF11AE9005F008B9926 /* go-output.a */; };
@@ -21,16 +20,6 @@
 		09EDDD811AE9289200ED1F82 /* ipfs_server.go in Resources */ = {isa = PBXBuildFile; fileRef = 09EDDD7E1AE9289200ED1F82 /* ipfs_server.go */; };
 		09EDDD831AE938D300ED1F82 /* ipfsAlertDialogBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EDDD821AE938D300ED1F82 /* ipfsAlertDialogBox.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0910F3C71AE839DB00BAFC5E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0910F3A51AE839DB00BAFC5E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0910F3AC1AE839DB00BAFC5E;
-			remoteInfo = ipfsios;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0910F3AD1AE839DB00BAFC5E /* ipfsios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ipfsios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +32,6 @@
 		0910F3BB1AE839DB00BAFC5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0910F3BD1AE839DB00BAFC5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0910F3C01AE839DB00BAFC5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0910F3C61AE839DB00BAFC5E /* ipfsiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ipfsiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0910F3CB1AE839DB00BAFC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0910F3CC1AE839DB00BAFC5E /* ipfsiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ipfsiosTests.m; sourceTree = "<group>"; };
 		0910F3D61AE839F300BAFC5E /* build-go.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-go.sh"; sourceTree = "<group>"; };
@@ -64,13 +52,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0910F3C31AE839DB00BAFC5E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				0910F3AD1AE839DB00BAFC5E /* ipfsios.app */,
-				0910F3C61AE839DB00BAFC5E /* ipfsiosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,24 +149,6 @@
 			productReference = 0910F3AD1AE839DB00BAFC5E /* ipfsios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0910F3C51AE839DB00BAFC5E /* ipfsiosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0910F3D31AE839DB00BAFC5E /* Build configuration list for PBXNativeTarget "ipfsiosTests" */;
-			buildPhases = (
-				0910F3C21AE839DB00BAFC5E /* Sources */,
-				0910F3C31AE839DB00BAFC5E /* Frameworks */,
-				0910F3C41AE839DB00BAFC5E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0910F3C81AE839DB00BAFC5E /* PBXTargetDependency */,
-			);
-			name = ipfsiosTests;
-			productName = ipfsiosTests;
-			productReference = 0910F3C61AE839DB00BAFC5E /* ipfsiosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,10 +160,6 @@
 				TargetAttributes = {
 					0910F3AC1AE839DB00BAFC5E = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					0910F3C51AE839DB00BAFC5E = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 0910F3AC1AE839DB00BAFC5E;
 					};
 				};
 			};
@@ -219,7 +177,6 @@
 			projectRoot = "";
 			targets = (
 				0910F3AC1AE839DB00BAFC5E /* ipfsios */,
-				0910F3C51AE839DB00BAFC5E /* ipfsiosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,13 +193,6 @@
 				0910F3D81AE839F300BAFC5E /* build-go.sh in Resources */,
 				09EDDD801AE9289200ED1F82 /* ipfs_client.go in Resources */,
 				0910F3E21AE8474C00BAFC5E /* main.go in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0910F3C41AE839DB00BAFC5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,23 +228,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0910F3C21AE839DB00BAFC5E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0910F3CD1AE839DB00BAFC5E /* ipfsiosTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0910F3C81AE839DB00BAFC5E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0910F3AC1AE839DB00BAFC5E /* ipfsios */;
-			targetProxy = 0910F3C71AE839DB00BAFC5E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0910F3BA1AE839DB00BAFC5E /* Main.storyboard */ = {
@@ -354,7 +288,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = arm64;
@@ -411,6 +345,7 @@
 					"$(PROJECT_DIR)/ipfsios",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -426,40 +361,7 @@
 					"$(PROJECT_DIR)/ipfsios",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		0910F3D41AE839DB00BAFC5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ipfsiosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ipfsios.app/ipfsios";
-			};
-			name = Debug;
-		};
-		0910F3D51AE839DB00BAFC5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ipfsiosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ipfsios.app/ipfsios";
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -480,15 +382,6 @@
 			buildConfigurations = (
 				0910F3D11AE839DB00BAFC5E /* Debug */,
 				0910F3D21AE839DB00BAFC5E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0910F3D31AE839DB00BAFC5E /* Build configuration list for PBXNativeTarget "ipfsiosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0910F3D41AE839DB00BAFC5E /* Debug */,
-				0910F3D51AE839DB00BAFC5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
